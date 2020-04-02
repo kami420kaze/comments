@@ -34,3 +34,14 @@ r = random.randint(0, x)
 print('一共有', len(shit), '人覺得這個產品很shit')
 print('有人說:', shit[r])
 print('這是其中的第', r, '筆')
+
+# shit = []
+# for d in data:
+# 	if 'shit' in d:
+# 		shit.append(d)
+# 可以等於
+# shit = [d for d in data if 'shit' in d]
+# 第一個d是append後面的d-你可以改成任何你想加進去的東西
+# 後面是差不多
+# 結構是
+# output = [(運算) for (變數) in (清單) (篩選條件)]
