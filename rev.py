@@ -17,4 +17,11 @@ for d in data:
 	sum_len += len(d) #sum_len = sum_len + len(d)
 
 avg_len = sum_len / num
-print(avg_len)
+print('平均評論長度為', avg_len, '字')
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d.strip())
+print('總共有', len(new), '筆資料小於100字')
+print(new)
